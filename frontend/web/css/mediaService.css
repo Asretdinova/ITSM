@@ -1,0 +1,566 @@
+.header.colored {
+    background: rgba(139, 60, 151, 0.4);
+    padding-bottom: 20px;
+}
+
+.header .langBar li a,
+.header .phoneNum,
+.header .langBar,
+.header .socialList li a,
+.header .menu > li > a {
+    color: #fff !important;
+}
+
+.header .socialList li a:hover,
+.header .menu > li > a:hover,
+.header .menu li ul li a:hover,
+.header .headerElements .langBar li.active a,
+.header .headerElements .langBar li a:hover {
+    color: #ff0e82 !important;
+}
+
+.headerElements .logo img {
+    filter: brightness(0%) invert(100%);
+}
+
+.icon_accessibility, .circle {
+    background: #ff0e82 !important;
+}
+
+.bannerContent {
+    background: #11155c url("../img/mediaServiceBg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 0 0 50px 0;
+}
+
+.bannerBox .headerElements {
+}
+
+.bannerBox .breadcrumbsRow {
+    background: rgba(139, 60, 151, 0.7);
+}
+
+.bannerBox .breadcrumbsRow .breadcrumb li {
+    color: #ff0066;
+}
+
+.bannerBox .bannerTitle {
+    text-align: center;
+    width: 60%;
+    margin: 70px auto 20px auto;
+}
+
+.bannerBox .bannerTitle h1 {
+    font-size: 127px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bannerBox .bannerTitle h2 {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.bannerBox .bannerTitle h2:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    background: #fff;
+    opacity: 0.3;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconAdsList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconAdsList .item {
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.iconAdsList .item h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.iconAdsList .item img {
+    margin-right: 20px;
+}
+
+.buttonsList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.buttonsList a {
+    color: #ff0066 !important;
+    background: #fff;
+    display: block;
+    padding: 10px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+.buttonsList a.insta {
+    color: #fff !important;
+    background: rgb(254, 129, 67);
+    background: linear-gradient(51deg, rgba(254, 129, 67, 1) 0%, rgba(255, 2, 137, 1) 100%);
+    font-weight: bold;
+}
+
+.buttonsList a:hover {
+    border-color: #ff0066;
+}
+
+.buttonsList a.insta:hover {
+    border-color: #fff;
+}
+
+.sectionTitle {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.adsList {
+    display: flex;
+}
+
+.adsList .item {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.adsList .item .iconBox {
+    box-shadow: 0 0 10px rgba(19, 23, 98, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adsList .item h1 {
+    font-size: 36px;
+}
+
+.section {
+    padding: 30px 0;
+}
+
+.section.gradient {
+    background: rgb(254, 129, 67);
+    background: linear-gradient(51deg, rgba(254, 129, 67, 1) 0%, rgba(255, 2, 137, 1) 100%);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.gradient .sectionTitle {
+    font-weight: normal;
+}
+
+.gradient .lined {
+    text-align: center;
+    background: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.gradient .lined::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.gradient .lined::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    flex: 1;
+    margin-left: 40px;
+}
+
+.idesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 50px 0;
+}
+
+.idesList .item {
+    display: flex;
+    align-items: center;
+}
+
+.idesList .item .imageBox {
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+}
+
+.idesList .item h1 {
+    flex: 1;
+    font-size: 24px;
+    margin: 0;
+}
+
+.grBtn {
+    color: #fff !important;
+    padding: 10px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grBtn:hover {
+    background: #fff;
+    color: #ff0066 !important;
+}
+
+.section {
+    margin: 0 !important;
+    padding: 60px 0;
+}
+
+.section.draft {
+    background: url("../img/draft_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.adsGrid {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.adsGrid .item {
+    text-align: center;
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0 0 20px #ddd;
+}
+
+.section.grey {
+    background: #efefef;
+}
+
+.boldTitle {
+    color: #000 !important;
+}
+
+.boldTitle:before {
+    display: none !important;
+}
+
+.section.feedback {
+    background: url("../img/feedackBg.jpg") center right no-repeat;
+    color: #000;
+}
+
+#feedback {
+    background: none;
+    padding: 0 !important;
+    color: #000;
+}
+
+#feedback .feedback-form input, #feedback .feedback-form textarea {
+    border-radius: 3px;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    border-color: #d9d9d9;
+}
+
+#feedback .feedback-form input::-webkit-input-placeholder,
+#feedback .feedback-form textarea::-webkit-input-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form input:-moz-placeholder,
+#feedback .feedback-form textarea::-moz-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form input::-moz-placeholder,
+#feedback .feedback-form textarea::-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form .help-block {
+    color: red;
+}
+
+#feedback a.actionButton.orange, #feedback .actionButton.orange {
+    background: rgb(254, 129, 67);
+    background: linear-gradient(51deg, rgba(254, 129, 67, 1) 0%, rgba(255, 2, 137, 1) 100%);
+}
+
+#feedback a.actionButton.orange:hover, #feedback .actionButton.orange:hover {
+    background: #fff;
+}
+
+.footer {
+    margin: 0 !important;
+    padding-top: 70px;
+    background: #11155c url("../img/mediaServiceBg.jpg") top left;
+    background-size: cover;
+    transform: scaleX(-1);
+    color: #fff;
+}
+
+.footer .container {
+    transform: scaleX(-1);
+}
+
+.footer .footerMenu .menuList ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.footerMenu .menuList h2 {
+    color: #ff0066;
+    font-weight: bold;
+}
+
+.footer .logo a p {
+    color: #fff;
+}
+
+.footer .logo a img {
+    filter: brightness(0) invert(100%);
+}
+
+.rowBoxes > div {
+    border-color: #4d467e !important;
+}
+
+.footer .fContact .fContent h1 {
+    color: #ff0066;
+}
+
+.footer .fContact {
+    color: #fff;
+}
+
+.footer .fContact .fIcon {
+    background: rgb(254, 129, 67);
+    background: linear-gradient(51deg, rgba(254, 129, 67, 1) 0%, rgba(255, 2, 137, 1) 100%);
+}
+
+.footer .fContact .socialList a {
+    color: #fff;
+}
+
+.footer .fContact .socialList a:hover {
+    color: #ff0066;
+}
+
+.footer .footerRight {
+    background: #fff;
+    color: #000;
+    padding: 20px 0 10px 0 !important;
+}
+
+.footer .rowBoxes {
+    margin-bottom: 30px;
+}
+
+.tabs-left > .nav-tabs {
+    border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+    display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+    float: none;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    min-width: 74px;
+    margin-right: 0;
+    margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+    float: left;
+    margin-right: 19px;
+    border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    margin-right: -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
+}
+
+.instaTabs ul {
+    border-right: 1px solid #000;
+}
+
+.instaTabs ul li a {
+    border: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.instaTabs ul li a img {
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.instaTabs ul li.active a {
+    color: #b5b5b5;
+}
+
+.instaTabs ul li.active a img {
+    filter: brightness(0) invert(80%);
+}
+
+.instaTabs ul li a:hover {
+    background: none;
+    color: #ff0066;
+}
+
+.casesList img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.casesList .row {
+    padding: 0 62px;
+}
+
+.casesList .swiper-button-next, .casesList .swiper-button-prev {
+    filter: brightness(0) invert(50%);
+}
+
+.arrow {
+    border-color: #c6c6c6 !important;
+}
+
+.fContent a {
+    color: #fff !important;
+}
+
+.feedbackImage:before,
+.feedbackImage:after {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .adsList {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adsList .item {
+        width: 43%;
+        flex: none;
+    }
+
+    .tabs-left > .nav-tabs, .tabs-left > .nav-tabs > li {
+        float: none;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 778px) {
+    .adsList .item {
+        width: 100%;
+    }
+
+    .adsGrid, .idesList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .iconAdsList {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .bannerBox .bannerTitle h1 {
+        font-size: 60px;
+    }
+
+    .bannerBox .bannerTitle h2 {
+        font-size: 20px;
+    }
+
+    .buttonsList {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        font-size: 25px;
+    }
+
+    .adsList .item h1 {
+        font-size: 20px;
+    }
+
+    .adsGrid h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .idesList .item h1 {
+        font-size: initial;
+    }
+}

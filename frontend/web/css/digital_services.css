@@ -1,0 +1,413 @@
+.header.purple {
+    background: #413496;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.header.purple .headerElements {
+    color: #fff;
+}
+
+.header.purple .langBar li a,
+.header.purple .phoneNum,
+.header.purple .socialList li a,
+.header.purple .menu > li > a,
+.header.purple .menu li ul li a {
+    color: #fff;
+}
+
+.header.purple .menu li ul li a {
+    color: #000;
+}
+
+.header.purple .langBar li:hover a,
+.header.purple .menu > li:hover > a,
+.header.purple .menu li ul li:hover a {
+    color: #f18917;
+}
+
+.breadcrumbsRow.purple {
+    background: #44399b;
+}
+
+.accentBanner {
+    background: #413496;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.accentBanner::after {
+    content: '';
+    position: absolute;
+    background: url("../img/bannerBg.png") no-repeat;
+    width: 2944px;
+    height: 700px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.accentBanner.digitalServices::before {
+    content: '';
+    position: absolute;
+    background: url("../img/digitalServices.jpg") no-repeat;
+    width: 1165px;
+    height: 560px;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+}
+
+.accentBanner h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accentBanner p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.accentBanner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.accentBanner.digitalServices {
+    min-height: 670px;
+}
+
+.accentBanner.digitalServices .container {
+    padding-top: 80px;
+    width: 720px;
+}
+
+.contentSection {
+    padding: 80px 0;
+}
+
+.contentSection.noBottom {
+    padding-bottom: 0;
+}
+
+.contentSection.noTop {
+    padding-top: 0;
+}
+
+.adItems .elItem.digital {
+    border: 1px solid #eae9f3;
+    margin: 25px;
+    padding: 40px 60px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.adItems .elItem.digital h2 {
+    color: #403496;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+.adItems .elItem.digital::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background: #6197ff;
+    transition: all 0.1s ease;
+}
+
+.adItems .elItem.digital:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px #ddd;
+}
+
+.adItems .elItem.digital:hover::after {
+    height: 6px;
+}
+
+.adItems .elItem.digital:hover h2 {
+    color: #6197ff;
+}
+
+.stagesList {
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+    background: #558bf4;
+}
+
+.stagesList::before {
+    content: '';
+    background: url("../img/digitalBg.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3508px;
+    height: 1150px;
+}
+
+.stagesList .container {
+    margin: 150px auto 200px auto;
+    position: relative;
+    z-index: 10;
+}
+
+.stagesList h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.circlesList {
+    display: flex;
+}
+
+.circlesList .circlesElement {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circlesList .circlesElement .circleNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #6197ff;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+    margin: 35px 0;
+}
+
+.circlesList .circlesElement h2 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.circlesList .circlesElement .imageBox {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContent .cItem {
+    display: flex;
+}
+
+.imageContent .cItem .info {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: #373737;
+}
+
+.imageContent .cItem .info h1 {
+    font-size: 30px;
+    color: #403496;
+    font-weight: bold;
+}
+
+.imageContent .cItem img {
+    margin: 0 100px 0 0;
+}
+
+.imageContent .cItem.reversed img {
+    margin: 0 0 0 100px;
+}
+
+.imageContent .cItem:nth-child(2),
+.imageContent .cItem:nth-child(3) {
+    margin-top: -100px;
+}
+
+.digitalPartners {
+    background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 80px 0;
+    margin: -85px 0;
+}
+
+.digitalPartners .boldTitle {
+    color: #000;
+}
+
+.digitalPartners .boldTitle::before {
+    display: none;
+}
+
+.digitalFeedback .feedbackImage {
+    background: #fff;
+    color: #000;
+}
+
+.digitalFeedback .feedbackImage:before,
+.digitalFeedback .feedbackImage:after {
+    display: none;
+}
+
+.digitalFeedback .feedbackImage .boldTitle {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.digitalFeedback .feedback-form input:focus,
+.digitalFeedback .feedback-form textarea:focus {
+    border-color: #423496;
+    color: #423496;
+}
+
+.digitalFeedback input::-webkit-input-placeholder,
+.digitalFeedback textarea::-webkit-input-placeholder {
+    color: #b8b8b8;
+}
+
+.digitalFeedback input:-moz-placeholder,
+.digitalFeedback textarea::-moz-placeholder {
+    color: #b8b8b8;
+}
+
+.digitalFeedback input::-moz-placeholder,
+.digitalFeedback textarea::-moz-placeholder {
+    color: #b8b8b8;
+}
+
+:-ms-input-placeholder {
+    color: #b8b8b8;
+}
+
+.digitalFeedback .feedback-form .help-block {
+    color: red;
+}
+
+.digitalFooter {
+    background: #403496;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    margin-top: -150px;
+}
+
+.digitalFooter .logo p {
+    color: #fff;
+}
+
+.digitalFooter .footerMenu .menuList ul li a,
+.digitalFooter .fContact .socialList a,
+.digitalFooter .fContact a {
+    color: #fff;
+}
+
+.digitalFooter .footerMenu .menuList ul li a:hover,
+.digitalFooter .fContact .socialList a:hover,
+.digitalFooter .fContact a:hover {
+    color: #f18917;
+}
+
+.digitalFooter .fContact .fContent h1 {
+    color: #3484e0;
+}
+
+.digitalFooter .fContact {
+    color: #fff;
+}
+
+.digitalFooter .footerMenu .menuList h2 {
+    color: #9bffff;
+}
+
+.digitalFooter .rowBoxes > div {
+    border-color: #5f55a7;
+}
+
+.drop_menu__content .logo img {
+    filter: none;
+}
+
+.menu-icon__line {
+    background: #fff !important;
+}
+
+.drop_menu-active .menu-icon__line {
+    background: #000 !important;
+}
+
+@media (max-width: 991px) {
+    .circlesList .circlesElement .circleNum {
+        width: 100px;
+        height: 100px;
+        font-size: 70px;
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .imageContent .cItem img {
+        display: none;
+    }
+
+    .imageContent .cItem:nth-child(2),
+    .imageContent .cItem:nth-child(3) {
+        margin: 0;
+    }
+
+    .accentBanner.digitalServices .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .circlesList {
+        flex-direction: column;
+    }
+
+    .circlesList .circlesElement {
+        flex-direction: row;
+        padding: 0 100px;
+        justify-content: normal;
+    }
+
+    .circlesList .circlesElement .imageBox {
+        display: none;
+    }
+
+    .circlesList .circlesElement .circleNum {
+        margin-right: 50px;
+    }
+
+    .circlesList .circlesElement h2 {
+        text-align: left;
+    }
+
+    .digitalFeedback .feedbackImage {
+        padding: 30px 0 100px 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .circlesList .circlesElement {
+        padding: 0;
+    }
+}

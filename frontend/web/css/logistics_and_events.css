@@ -1,0 +1,512 @@
+::placeholder {
+    color: #000 !important;
+}
+
+:-ms-input-placeholder {
+    color: #000 !important;
+}
+
+::-ms-input-placeholder {
+    color: #000 !important;
+}
+
+.bannerBox {
+    background: #333f4c url("../img/logistics-and-events.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.bannerBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.bannerBox .bannerContent {
+    position: relative;
+    z-index: 10;
+}
+
+.header {
+    background: none;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.header .headerElements {
+    color: #fff;
+}
+
+.header .langBar li a,
+.header .phoneNum,
+.header .socialList li a,
+.header .menu > li > a,
+.header .menu li ul li a {
+    color: #fff;
+}
+
+.header .menu li ul li a {
+    color: #000;
+}
+
+.header .langBar li:hover a,
+.header .menu > li:hover > a,
+.header .menu li ul li:hover a {
+    color: #00ffcc;
+}
+
+.header .menu > li:hover > a::after,
+.header .menu > li.active > a::after {
+    background: #00ffcc;
+}
+
+.headerElements .langBar li.active a,
+.headerElements .langBar li a:hover {
+    color: #00ffcc !important;
+}
+
+.breadcrumbsRow {
+    background: none !important;
+}
+
+.icon_accessibility,
+.circle {
+    background: #00ffcc;
+}
+
+.breadcrumbsRow .breadcrumb li {
+    color: #00ffcc !important;
+}
+
+.logo a img {
+    filter: brightness(0%) invert(100%);
+}
+
+.icon_accessibility, .circle {
+    background: #3c4552 !important;
+}
+
+#feedback .feedback-form {
+    padding: 0 200px;
+}
+
+.fedForm #feedback .feedback-form {
+    padding: 0;
+}
+
+#feedback .feedback-form input, #feedback .feedback-form textarea {
+    border-radius: 3px;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    border-color: #d9d9d9;
+}
+
+.fedForm {
+    background: #fff;
+    padding: 30px 45px;
+    color: #000;
+    margin: 30px 0 60px 0;
+    box-shadow: 0 3px 20px #515151;
+}
+
+.fedForm h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.fedForm input {
+    border-radius: 2px !important;
+    text-align: left !important;
+    padding: 15px !important;
+}
+
+.fedForm .actionButton,
+.blue.actionButton,
+.blueBtn {
+    background: #0084ff !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 15px 15px !important;
+    box-shadow: 0 3px 20px #cde7ff;
+}
+
+.fedForm .actionButton:hover,
+.blueBtn:hover {
+    box-shadow: 0 3px 30px #a9cae8 !important;
+}
+
+.blue.actionButton:hover {
+    box-shadow: 0 3px 30px #a9cae8 !important;
+}
+
+.bannerTitle {
+    margin-top: 100px;
+}
+
+.bannerTitle h1 {
+    font-size: 48px;
+    color: #00ffcc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bannerTitle h2 {
+    font-size: 30px;
+}
+
+.imageContentBox {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 60px;
+}
+
+.imageContentBox .item {
+    flex: 1;
+    margin: 0 50px;
+}
+
+.imageContentBox h1 {
+    font-size: 48px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.imageContentBox h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #e3e3e3;
+    bottom: 0;
+    left: 0;
+}
+
+.imageContentBox p {
+    font-size: 18px;
+}
+
+.imageContentBox .item:last-child {
+    margin-bottom: 20px;
+}
+
+.infoContent {
+    background: url("../img/logisticsBackground.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+    padding: 50px;
+}
+
+.infoBoxContent {
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.infoBoxContent h2 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.infoBoxContent h2:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.boldTitle {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    background: #43ffd9;
+    color: #000 !important;
+    display: table;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 5px 10px !important;
+}
+
+.boldTitle.white {
+    background: #fff;
+    color: #000;
+}
+
+.boldTitle.white {
+    color: #000 !important;
+}
+
+.boldTitle:before {
+    display: none;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.categoriesList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    grid-column-gap: 20px;
+}
+
+.categoriesList .item {
+    position: relative;
+    background: #fff;
+    grid-column: span 1;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.categoriesList .item:hover {
+    box-shadow: 0 0 25px #c6c6c6;
+}
+
+.logisticFeedback .feedbackImage {
+    background-size: cover;
+    position: relative;
+    color: #000;
+}
+
+.logisticFeedback .feedbackImage:before {
+    background: #e7e7e7 url("../img/logisticCity.jpg") center center no-repeat;
+}
+
+.logisticFeedback input,
+.logisticFeedback textarea {
+    background: #fff !important;
+    text-align: left;
+}
+
+.logisticFeedback .actionButton {
+    background: #0084ff !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 15px 15px !important;
+    box-shadow: 0 3px 20px #cde7ff;
+}
+
+.logisticFeedback .actionButton {
+    box-shadow: 0 3px 30px #a9cae8 !important;
+}
+
+.feedback-form .help-block {
+    color: red !important;
+}
+
+.footer {
+    background: #333f4c url("../img/logistics-and-events.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    margin: 0 !important;
+    padding-top: 70px;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 0;
+}
+
+.footer .container {
+    z-index: 2;
+    position: relative;
+}
+
+.footer .logo p {
+    color: #fff !important;
+}
+
+#feedback {
+    margin: 0;
+}
+
+.footerMenu .menuList h2 {
+    color: #00ffcc;
+}
+
+.footerMenu .menuList ul li a {
+    color: #fff !important;
+}
+
+.fContact .fIcon {
+    background: #5c6677 !important;
+    color: #00ffcc !important;
+}
+
+.fContact .fContent h1 {
+    color: #00ffcc !important;
+}
+
+.fContact {
+    color: #fff !important;
+}
+
+.fContact .socialList a {
+    color: #fff !important;
+}
+
+.portfolioList {
+    display: grid;
+    grid-template-areas: "a b c" "d b e" "f f e";
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.portfolioList div {
+    background: #56606a;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolioList div:hover {
+    box-shadow: 0 3px 20px #7f7f7f;
+}
+
+.portfolioList div span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(86, 96, 106, 0.8);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.portfolioList div:hover span {
+    opacity: 1;
+}
+
+.portfolioList div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolioList div:nth-child(1) {
+    grid-area: a;
+    height: 400px;
+}
+
+.portfolioList div:nth-child(2) {
+    grid-area: b;
+    height: 640px;
+}
+
+.portfolioList div:nth-child(3) {
+    grid-area: c;
+    height: 400px;
+}
+
+.portfolioList div:nth-child(4) {
+    grid-area: d;
+    height: 200px;
+}
+
+.portfolioList div:nth-child(5) {
+    grid-area: e;
+}
+
+.portfolioList div:nth-child(6) {
+    grid-area: f;
+    height: 280px;
+}
+
+.header {
+    color: #fff;
+}
+
+.menu-icon__line {
+    background: #fff !important;
+}
+
+.drop_menu-active .menu-icon__line {
+    background: #000 !important;
+}
+
+.arrow {
+    border-color: #c6c6c6 !important;
+}
+
+@media (max-width: 992px) {
+    .imageContentBox .item:first-child {
+        display: none;
+    }
+
+    .portfolioList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolioList div {
+        height: auto !important;
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .infoBoxContent {
+        width: 100%;
+    }
+
+    .categoriesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .infoContent {
+        padding: 20px 0;
+    }
+
+    .imageContentBox h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolioList div {
+        width: 100%;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .categoriesList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .infoBoxContent h2 {
+        font-size: 20px;
+    }
+}

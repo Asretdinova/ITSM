@@ -1,0 +1,448 @@
+.photoBoxList {
+    padding: 0;
+    margin: 0;
+    display: block;
+    clear: both;
+}
+
+.photoBoxList .photoBox {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    background: #7e7e7e;
+    float: left;
+    margin: 5px;
+    position: relative;
+    border: 2px solid #999;
+    cursor: grab;
+}
+
+.photoBoxList .photoBox .fuProgressBar {
+    background: #c8c8c8;
+    height: 10px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    top: 50%;
+}
+
+.photoBoxList .photoBox .fuProgressBar .bar {
+    background: #008DD2;
+    height: 100%;
+    width: auto;
+}
+
+.photoBoxList .photoBox .cancelBtn {
+    position: absolute;
+    border: none;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    top: 2px;
+    right: 5px;
+    color: #969696;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    z-index: 10;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #7d7d7d;
+}
+
+.photoBoxList .photoBox .cancelBtn:hover {
+    color: #ed4c3d;
+}
+
+.photoBoxList .photoBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fileUploaderFilesList {
+    padding: 0;
+    margin: 0;
+    display: block;
+    clear: both;
+}
+
+.fileUploaderFilesList li {
+    list-style: none;
+    background: #f4f4f4;
+    border: 1px solid #cecece;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 2px !important;
+    padding: 10px;
+    height: 70px;
+    position: relative;
+}
+
+.fileUploaderFilesList li .filesListBoxIcon {
+    padding-right: 5px;
+}
+
+.fileUploaderFilesList li .filesListBoxContent {
+    padding-left: 5px;
+    margin-top: 3px;
+}
+
+.fileUploaderFilesList li .fuProgressBar {
+    background: #c8c8c8;
+    height: 3px;
+    /*display: flex;*/
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.fileUploaderFilesList li .fuProgressBar .bar {
+    background: #008DD2;
+    height: 100%;
+    width: auto;
+}
+
+.fileUploaderFilesList li .fileUploaderFileName, .fileUploaderFilesList li .fileUploaderFileSize {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.fileUploaderFilesList li .fileUploaderFileSize {
+    font-size: 12px;
+}
+
+.fileUploaderFilesList li .cancelBtn {
+    position: absolute;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    top: 2px;
+    right: 5px;
+    color: #969696;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.fileUploaderFilesList li .cancelBtn:hover {
+    color: #ed4c3d;
+}
+
+.fileUploaderFilesList li.fuPill {
+    width: 48.61878453038674%;
+    float: left;
+    display: block;
+    min-height: 30px;
+    margin-left: 2.564102564102564%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fileUploaderFilesList .fu-Success {
+    border-color: #148800 !important;
+}
+
+.fileUploaderFilesList .fu-Success .fuMessage {
+    color: #148800;
+}
+
+.fileUploaderFilesList .fu-Error {
+    border-color: #e65434 !important;
+}
+
+.fileUploaderFilesList .fu-Error .fuMessage {
+    color: #e65434;
+}
+
+.fileUploaderFilesList .fuMessage {
+    font-size: 12px;
+    line-height: 14px;
+    z-index: 10;
+    position: relative;
+    margin-top: 3px;
+}
+
+.fileUploaderFilesList li.fuPill:after {
+    content: '';
+    background: url("../img/pillBg.png") no-repeat;
+    position: absolute;
+    width: 46px;
+    height: 35px;
+    top: 1px;
+    right: 1px;
+    z-index: 5;
+}
+
+@media (max-width: 979px) {
+    .fileUploaderFilesList li.fuPill {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fileUploaderFilesList li.fuPill {
+        width: 100%;
+    }
+}
+
+.pull_left {
+    float: left !important;
+}
+
+.fileUploaderBox {
+    margin: 10px 0;
+}
+
+.fileUploaderBox .btn {
+    margin-bottom: 7px;
+}
+
+.fileUploaderBox .dropArea {
+    background: rgba(161, 206, 228, 0.6);
+    border: 3px dashed #008dd2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100% !important;
+    min-height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 100;
+}
+
+.fileUploaderBox .dropZone {
+    position: relative;
+    width: 100%;
+}
+
+.fileUploaderBox .dropArea .dropZoneTextArea {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.fileUploaderBox .dropArea .dropZoneTextArea p {
+    font-size: 30px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+    color: #2D6A7B;
+    line-height: normal;
+}
+
+.fu_icon {
+    background-image: url("../img/extensions.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 35px;
+    height: 47px;
+    display: inline-block;
+}
+
+.fu_doc,
+.fu_docx,
+.fu_rtf,
+.fu_docm,
+.fu_dotx,
+.fu_dot,
+.fu_odt {
+    background-position: -36px 0;
+}
+
+.fu_xls,
+.fu_xlsx,
+.fu_xlsm,
+.fu_xlsb,
+.fu_xlth,
+.fu_csv,
+.fu_ods {
+    background-position: -73px 0;
+}
+
+.fu_ppt,
+.fu_pptx,
+.fu_pptm,
+.fu_pot,
+.fu_potx,
+.fu_pps,
+.fu_ppsx,
+.fu_ppa,
+.fu_odp {
+    background-position: -110px 0;
+}
+
+.fu_pdf {
+    background-position: 0 -48px;
+}
+
+.fu_zip,
+.fu_rar,
+.fu_isz,
+.fu_7-zip,
+.fu_ace,
+.fu_arj,
+.fu_bz2,
+.fu_cab,
+.fu_gzip,
+.fu_iso,
+.fu_jar,
+.fu_lzh,
+.fu_tar,
+.fu_uue,
+.fu_xz,
+.fu_7z,
+.fu_tgz,
+.fu_gz,
+.fu_001,
+.fu_z {
+    background-position: -36px -48px;
+}
+
+.fu_txt,
+.fu_ini,
+.fu_log {
+    background-position: -73px -48px;
+}
+
+.fu_html,
+.fu_htm,
+.fu_xml {
+    background-position: -110px -48px;
+}
+
+.fu_jpg,
+.fu_jpeg,
+.fu_jpe,
+.fu_bmp,
+.fu_gif,
+.fu_png,
+.fu_tga,
+.fu_tif,
+.fu_tiff,
+.fu_cdr,
+.fu_psd {
+    background-position: 0 -96px;
+}
+
+.fu_webm,
+.fu_mkv,
+.fu_flv,
+.fu_flv,
+.fu_vob,
+.fu_ogv,
+.fu_drc,
+.fu_mng,
+.fu_avi,
+.fu_mov,
+.fu_qt,
+.fu_wmv,
+.fu_yuv,
+.fu_rm,
+.fu_rmvb,
+.fu_asf,
+.fu_mp4,
+.fu_m4p,
+.fu_m4v,
+.fu_mpg,
+.fu_mp2,
+.fu_mpeg,
+.fu_mpe,
+.fu_mpv,
+.fu_mpg,
+.fu_mpeg,
+.fu_m2v,
+.fu_m4v,
+.fu_svi,
+.fu_3gp,
+.fu_3g2,
+.fu_mxf,
+.fu_roq,
+.fu_nsv {
+    background-position: -36px -96px;
+}
+
+.fu_act,
+.fu_aiff,
+.fu_aac,
+.fu_amr,
+.fu_ape,
+.fu_au,
+.fu_awb,
+.fu_dct,
+.fu_dss,
+.fu_dvf,
+.fu_flac,
+.fu_gsm,
+.fu_iklax,
+.fu_ivs,
+.fu_m4a,
+.fu_m4p,
+.fu_mmf,
+.fu_mp3,
+.fu_mpc,
+.fu_msv,
+.fu_ogg,
+.fu_oga,
+.fu_opus,
+.fu_ra,
+.fu_rm,
+.fu_raw,
+.fu_sln,
+.fu_tta,
+.fu_vox,
+.fu_wav,
+.fu_wma,
+.fu_wv,
+.fu_webm {
+    background-position: -73px -96px;
+}
+
+.fu_djvu {
+    background-position: -110px -96px;
+}
+
+.userProfileImgBox .userProfileImgProgress {
+    background: #b9dff4;
+    height: 7px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    margin-top: -7px;
+    display: none;
+}
+
+.userProfileImgBox .userProfileImgProgress .bar {
+    background: #7abfe4;
+    height: 100%;
+    width: 0;
+}
+
+.fileUploaderBox .btn {
+    margin-top: 0;
+    float: left;
+    line-height: inherit;
+    background: #27b3fb;
+}
+
+.fileUploaderBox .file-path-wrapper {
+    margin-top: 0;
+    float: left;
+}

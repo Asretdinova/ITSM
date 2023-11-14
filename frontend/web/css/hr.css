@@ -1,0 +1,544 @@
+body {
+    font-size: 18px !important;
+}
+
+.header.colored {
+    background: #27232a;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.header.colored .headerElements {
+    color: #fff;
+}
+
+.header.colored .langBar li a,
+.header.colored .phoneNum,
+.header.colored .socialList li a,
+.header.colored .menu > li > a,
+.header.colored .menu li ul li a {
+    color: #fff;
+}
+
+.header.colored .menu li ul li a {
+    color: #000;
+}
+
+.header.colored .langBar li:hover a,
+.header.colored .menu > li:hover > a,
+.header.colored .menu li ul li:hover a {
+    color: #ff4b1e;
+}
+
+.header .langBar li:hover a,
+.header .menu > li:hover > a,
+.header .menu li ul li:hover a {
+    color: #ff4b1e;
+}
+
+.header .menu > li:hover > a::after,
+.header .menu > li.active > a::after {
+    background: #ff4b1e;
+}
+
+.headerElements .langBar li.active a,
+.headerElements .langBar li a:hover {
+    color: #ff4b1e !important;
+}
+
+.icon_accessibility,
+.circle {
+    background: #ff4b1e !important;
+}
+
+.logo a img {
+    filter: brightness(0%) invert(100%);
+}
+
+.breadcrumbsRow.colored {
+    background: #312d34;
+}
+
+.breadcrumbsRow .breadcrumb li {
+    color: #ff4b1e !important;
+}
+
+.accentBanner {
+    background: #2d2831;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 580px;
+}
+
+.accentBanner .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.accentBanner .container::before {
+    content: '';
+    position: absolute;
+    background: url("../img/hrBanner.png") no-repeat;
+    width: 1397px;
+    height: 614px;
+    bottom: 0;
+    right: -270px;
+}
+
+.accentBanner .container .dataBox {
+    position: relative;
+    z-index: 1;
+}
+
+.actionButton.darkRed {
+    margin: 0;
+    border-radius: 0;
+    background: #ff4b1e;
+    padding: 10px 25px;
+    border: none;
+    text-align: center;
+}
+
+.accentBanner h1 {
+    font-weight: bold;
+    border-bottom: 1px solid #736f75;
+    display: inline;
+    padding-bottom: 8px;
+    font-size: 60px;
+}
+
+.accentBanner h1 span {
+    color: #ff4b1e;
+}
+
+.accentBanner ul {
+    margin: 50px 0;
+}
+
+.accentBanner ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.accentBanner ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #ff4b1e;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contentSection {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.contentSection.red {
+    background: #ff451b url("../img/words.png") top center no-repeat;
+    color: #fff;
+}
+
+.contentSection.darkBusiness {
+    background: #313131 url("../img/businessBg.png") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.simpleTitle {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2.simpleTitle {
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.targetList {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.targetList::after {
+    content: '';
+    background: url("../img/hr_target.png") no-repeat;
+    width: 579px;
+    height: 308px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -60px;
+}
+
+.targetList .group {
+    position: relative;
+    z-index: 1;
+    width: 330px;
+}
+
+.targetList .group .item {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.targetList .group .item h1 {
+    color: #ff4b1e;
+    font-size: 72px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.targetList .group .item h2 {
+    font-size: 18px;
+}
+
+.commentText {
+    border-left: 4px solid #ff4b1e;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.commentText br {
+    margin-bottom: 20px;
+}
+
+.spAdsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-top: 30px;
+}
+
+.spAdsList .item {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 5px rgba(220, 35, 3, 0.6);
+}
+
+.spAdsList .item .hBlock {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.spAdsList .item .hBlock img {
+    background: #000;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.spAdsList .item .hBlock h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.spAdsList .item .cBlock {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    height: 66%;
+}
+
+.chessBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    margin: 30px 0;
+}
+
+.chessBox .item {
+    padding: 30px;
+    position: relative;
+    background: #f5f5f5;
+}
+
+.chessBox .item .cItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.chessBox .item img {
+    width: 75px;
+    height: 75px;
+}
+
+.chessBox .item:nth-child(odd) {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(208, 208, 208, 0.4);
+    z-index: 1;
+    padding: 20px;
+}
+
+.chessBox .item:nth-child(odd) .cItem {
+    border: 1px solid #f5f5f5;
+    padding: 10px;
+}
+
+.someList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 0 40px 0;
+}
+
+.someList .item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.someList .item img {
+    margin-right: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.someList .item span {
+    flex: 1;
+}
+
+.pull-center {
+    display: table !important;
+    margin: 0 auto !important;
+}
+
+.boldTitle {
+    color: #000 !important;
+}
+
+.boldTitle:before {
+    display: none !important;
+}
+
+.section.feedback {
+    background: url("../img/cityFeedbackBg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #000;
+    margin: 0;
+}
+
+#feedback {
+    background: none;
+    padding: 50px 0 !important;
+    color: #000;
+    margin: 0;
+}
+
+#feedback .feedback-form input, #feedback .feedback-form textarea {
+    border-radius: 3px;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    border-color: #d9d9d9;
+}
+
+#feedback .feedback-form input::-webkit-input-placeholder,
+#feedback .feedback-form textarea::-webkit-input-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form input:-moz-placeholder,
+#feedback .feedback-form textarea::-moz-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form input::-moz-placeholder,
+#feedback .feedback-form textarea::-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+#feedback .feedback-form .help-block {
+    color: red;
+}
+
+#feedback a.actionButton.orange, #feedback .actionButton.orange {
+    background: #ff4b1e;
+    border-radius: 0;
+    padding: 10px 25px;
+}
+
+#feedback a.actionButton.orange:hover, #feedback .actionButton.orange:hover {
+    background: #fff;
+}
+
+.arrow {
+    border-color: #c6c6c6 !important;
+}
+
+.feedbackImage {
+    margin: 0;
+}
+
+.feedbackImage:before,
+.feedbackImage:after {
+    display: none !important;
+}
+
+.footer {
+    background: #313131 url("../img/hrFooterBg.png") center center no-repeat;
+    background-size: cover;
+    margin: 0 !important;
+    padding-top: 70px;
+    color: #fff;
+}
+
+.footerMenu .menuList ul li a,
+.fContact .socialList a {
+    color: #fff !important;
+}
+
+.footer .logo p {
+    color: #fff;
+}
+
+.footerMenu .menuList h2,
+.fContact .fContent h1 {
+    color: #ff4b1e !important;
+}
+
+.footer .fContact,
+.footer .fContact a {
+    color: #fff;
+}
+
+.footerMenu .menuList ul li a:hover,
+.footer .fContact a:hover {
+    color: #ff4b1e !important;
+}
+
+.footer .footerRight {
+    color: #878787;
+}
+
+.fContact .fIcon {
+    background: #6d6965 !important;
+    color: #ff4b1e !important;
+}
+
+.menu-icon__line {
+    background: #fff !important;
+}
+
+.drop_menu-active .menu-icon__line {
+    background: #000 !important;
+}
+
+.drop_menu .logo img {
+    filter: none;
+}
+
+@media (max-width: 1199px) {
+    .targetList::after {
+        opacity: 0.3;
+    }
+
+    .accentBanner .container .dataBox {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .chessBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .someList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .spAdsList {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .someList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) and (min-width: 601px) {
+    .chessBox .item:nth-child(odd) {
+        background: #f5f5f5;
+        box-shadow: none;
+    }
+
+    .chessBox .item:nth-child(4n),
+    .chessBox .item:nth-child(4n+1) {
+        background: #fff;
+        box-shadow: 0 0 15px rgba(208, 208, 208, 0.4);
+        z-index: 1;
+        padding: 20px;
+    }
+
+    .chessBox .item:nth-child(4n) .cItem,
+    .chessBox .item:nth-child(4n+1) .cItem {
+        border: 1px solid #f5f5f5;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .chessBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .someList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .targetList {
+        flex-direction: column;
+    }
+
+    .targetList .group {
+        width: 100%;
+    }
+
+    .accentBanner .container .dataBox {
+        width: 100%;
+    }
+
+    .simpleTitle {
+        font-size: 32px;
+    }
+
+    h2.simpleTitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spAdsList .item .hBlock img {
+        display: none;
+    }
+
+    .spAdsList .item .hBlock {
+        padding: 20px;
+    }
+}

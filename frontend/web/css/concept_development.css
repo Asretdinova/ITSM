@@ -1,0 +1,552 @@
+.bannerBox {
+    background: url("../img/conseptDevelopmentBanner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.bannerBox .bannerContent {
+    position: relative;
+    z-index: 10;
+}
+
+.header.conceptDevelopment {
+    background: none;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.header.conceptDevelopment .headerElements {
+    color: #fff;
+}
+
+.header.conceptDevelopment .langBar li a,
+.header.conceptDevelopment .phoneNum,
+.header.conceptDevelopment .socialList li a,
+.header.conceptDevelopment .menu > li > a,
+.header.conceptDevelopment .menu li ul li a {
+    color: #fff;
+}
+
+.header.conceptDevelopment .menu li ul li a {
+    color: #000;
+}
+
+.header.conceptDevelopment .langBar li:hover a,
+.header.conceptDevelopment .menu > li:hover > a,
+.header.conceptDevelopment .menu li ul li:hover a {
+    color: #0083fe;
+}
+
+.header.conceptDevelopment .menu > li:hover > a::after,
+.header.conceptDevelopment .menu > li.active > a::after {
+    background: #0083fe;
+}
+
+.conceptDevelopment .headerElements .langBar li.active a,
+.conceptDevelopment .headerElements .langBar li a:hover {
+    color: #0083fe !important;
+}
+
+.breadcrumbsRow.conceptDevelopment {
+    background: none;
+}
+
+.conceptDevelopment .icon_accessibility,
+.conceptDevelopment .circle {
+    background: #0083fe;
+}
+
+.breadcrumbsRow .breadcrumb li {
+    color: #0083fe !important;
+}
+
+.accentBanner {
+    text-align: center;
+    color: #fff;
+    padding: 50px 0 130px 0;
+}
+
+.accentBanner h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.accentBanner h2 {
+    color: #0083fe;
+    font-size: 30px;
+    padding: 0 256px;
+}
+
+.statList {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.statList .statItem {
+    display: flex;
+    width: 185px;
+    height: 185px;
+    flex-direction: column;
+    border: 1px solid #a0a1a2;
+    border-radius: 50%;
+    margin: 20px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.statList .statItem h1 {
+    font-size: 48px;
+    color: #0083fe;
+    font-weight: bold;
+    margin: 0;
+}
+
+.statList .statItem h2 {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+.accentButton,
+a.accentButton {
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    color: #fff !important;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 0 10px;
+}
+
+.accentButton.filled,
+a.accentButton.filled {
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #0083fe;
+    border-color: #0083fe;
+}
+
+.accentButton:hover {
+    opacity: .7;
+}
+
+.afterAccent {
+    padding: 60px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.afterAccent p {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.buttonsList {
+    margin-top: 50px;
+}
+
+.buttonsList a {
+    margin: 10px;
+}
+
+.darkText {
+    color: #545454;
+    font-size: 18px;
+}
+
+.borderedText {
+    font-size: 48px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.borderedText::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: #0084ff;
+}
+
+.boldTitle {
+    color: #000 !important;
+    position: relative;
+    margin-bottom: 50px !important;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.boldTitle::before {
+    background: #0084ff !important;
+}
+
+.boldTitle::after {
+    content: attr(title);
+    position: absolute;
+    font-size: 98px;
+    color: #f7f7ff;
+    font-weight: bold;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.section {
+    margin: 100px 0 !important;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.stagesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 500px;
+    grid-row-gap: 100px;
+    position: relative;
+}
+
+.stagesList::before {
+    content: '';
+    position: absolute;
+    background: url("../img/statTab.jpg") no-repeat;
+    width: 595px;
+    height: 356px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stagesList .stageItem {
+    position: relative;
+    z-index: 1;
+}
+
+.stagesList .stageItem h1 {
+    font-size: 30px;
+    color: #0084ff;
+    font-weight: bold;
+    padding: 30px 0 30px 30px;
+    white-space: nowrap;
+}
+
+.stagesList .stageItem h1 span {
+    font-size: 48px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.stagesList .stageItem h1 span::before {
+    content: '';
+    position: absolute;
+    background: #f7f7ff;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adItems {
+    margin-top: 50px;
+}
+
+.adItems .elItem.concept {
+    border: 1px solid #fff;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    background: #0084ff;
+    grid-column: span 1;
+    margin: 25px;
+    box-shadow: 0 0 0 24px #0084ff;
+    transition: all 0.2s ease;
+}
+
+.adItems .elItem.concept img {
+    filter: brightness(0%) invert(100%);
+    transition: all 0.1s ease;
+}
+
+.adItems .elItem.concept h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+.adItems .elItem.concept:hover {
+    cursor: pointer;
+    background: #f6fbff;
+    color: #0084ff;
+    box-shadow: 0 0 0 24px #f6fbff;
+    border-color: #0084ff;
+}
+
+.adItems .elItem.concept:hover img {
+    filter: none;
+}
+
+.adItems .elItem.concept:hover h2 {
+    color: #0084ff;
+}
+
+.textList {
+    display: flex;
+    flex-direction: column;
+}
+
+.textList .textItem {
+    display: flex;
+    align-items: center;
+}
+
+.textList .textItem .textPath {
+    width: 50%;
+    color: #545454;
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.textList .textItem .textPath h1 {
+    color: #469dff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textList .textItem:nth-child(even) .textPath {
+    padding-left: 120px;
+}
+
+.textList .textItem .imagePath {
+    flex: 1;
+    height: 359px;
+}
+
+.textList .textItem .imagePath::before {
+    content: '';
+    position: absolute;
+    width: 962px;
+    height: 359px;
+}
+
+.textList .textItem:nth-child(even) .imagePath::before {
+    margin-left: -392px;
+}
+
+.textList .textItem .imagePath.first::before {
+    background: url("../img/concept1.jpg");
+}
+
+.textList .textItem .imagePath.second::before {
+    background: url("../img/concept2.jpg");
+}
+
+.textList .textItem .imagePath.third::before {
+    background: url("../img/concept3.jpg");
+}
+
+.conceptFeedback .boldTitle::after {
+    color: #fff;
+}
+
+.conceptFeedback .feedbackImage {
+    background: #f7f7ff;
+    color: #000;
+    padding: 80px 0 50px 0;
+    margin: 0;
+}
+
+.conceptFeedback .feedbackImage:before {
+    background: #f7f7ff;
+}
+
+.conceptFeedback a.actionButton.orange,
+.conceptFeedback .actionButton.orange {
+    background: #0084ff;
+    border-color: #0084ff;
+}
+
+.conceptFeedback .feedback-form input:focus,
+.conceptFeedback .feedback-form textarea:focus {
+    border-color: #423496;
+    color: #423496;
+}
+
+.conceptFeedback input::-webkit-input-placeholder,
+.conceptFeedback textarea::-webkit-input-placeholder {
+    color: #b8b8b8;
+}
+
+.conceptFeedback input:-moz-placeholder,
+.conceptFeedback textarea::-moz-placeholder {
+    color: #b8b8b8;
+}
+
+.conceptFeedback input::-moz-placeholder,
+.conceptFeedback textarea::-moz-placeholder {
+    color: #b8b8b8;
+}
+
+:-ms-input-placeholder {
+    color: #b8b8b8;
+}
+
+.conceptFeedback .feedback-form .help-block {
+    color: red;
+}
+
+.conceptFooter {
+    background: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.conceptFooter .logo p {
+    color: #fff;
+}
+
+.conceptFooter .footerMenu .menuList ul li a,
+.conceptFooter .fContact .socialList a,
+.conceptFooter .fContact a {
+    color: #fff;
+}
+
+.conceptFooter .footerMenu .menuList ul li a:hover,
+.conceptFooter .fContact .socialList a:hover,
+.conceptFooter .fContact a:hover {
+    color: #f18917;
+}
+
+.conceptFooter .fContact .fContent h1 {
+    color: #505050;
+}
+
+.conceptFooter .fContact {
+    color: #fff;
+}
+
+.conceptFooter .footerMenu .menuList h2 {
+    color: #0084ff;
+}
+
+.conceptFooter .rowBoxes > div {
+    border-color: #373737;
+}
+
+.conceptFooter .fContact .fIcon {
+    background: #505050;
+}
+
+.logo a img {
+    filter: brightness(0%) invert(100%);
+}
+
+.drop_menu__content .logo img {
+    filter: none;
+}
+
+.menu-icon__line {
+    background: #fff !important;
+}
+
+.drop_menu-active .menu-icon__line {
+    background: #000 !important;
+}
+
+@media (max-width: 1199px) {
+    .textList .textItem:nth-child(even) .imagePath::before {
+        margin-left: -492px !important;
+    }
+
+    .afterAccent {
+        flex-direction: column;
+    }
+
+    .stagesList {
+        grid-column-gap: 10px;
+    }
+
+    .stagesList::before {
+        display: none;
+    }
+
+    .textList {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .statList .statItem {
+        margin: 20px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .accentBanner h2 {
+        padding: 0;
+    }
+
+    .textList .textItem .imagePath {
+        display: none;
+    }
+
+    .textList .textItem .textPath {
+        width: 100%;
+    }
+
+    .textList .textItem:nth-child(even) .textPath {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .stagesList {
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-row-gap: 0;
+    }
+
+    .boldTitle::after {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .statList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statList .statItem {
+        border: none;
+        height: 100%;
+    }
+
+    .buttonsList {
+        flex-direction: column;
+    }
+}
