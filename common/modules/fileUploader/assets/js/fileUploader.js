@@ -1,5 +1,5 @@
 /**
- * Created by Azamat Mirvosiqov on 06.08.2015.
+ * Created by Mamura Asretdinova on 06.08.2015.
  */
 
 var fileUploader = {

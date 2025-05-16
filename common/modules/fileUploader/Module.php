@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * Author: Azamat Mirvosiqov
+ * Author: Mamura Asretdinova
  * Date: 14.12.2016
  * Time: 20:49
  */

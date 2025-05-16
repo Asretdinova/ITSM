@@ -2,7 +2,7 @@
 
 /**
  * Created by PhpStorm.
- * Author: Azamat Mirvosiqov
+ * Author: Mamura Asretdinova
  * Date: 8/8/19
  * Time: 3:59 AM
  */
